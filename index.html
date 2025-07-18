@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EQUILINK - Create Agent</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Left Sidebar -->
+        <div class="sidebar">
+            <div class="logo">
+                <h1>EQUILINK</h1>
+                <div class="logo-icon">⚡</div>
+            </div>
+            
+            <nav class="nav-menu">
+                <div class="nav-item active">
+                    <span class="nav-icon">🔧</span>
+                    Create Agent
+                </div>
+                <div class="nav-item">
+                    <span class="nav-icon">🌐</span>
+                    Browse Agent
+                </div>
+                <div class="nav-item">
+                    <span class="nav-icon">💬</span>
+                    Chat Agent
+                </div>
+            </nav>
+            
+            <div class="theme-toggle">
+                <button class="theme-btn active" data-theme="light">Light</button>
+                <button class="theme-btn" data-theme="dark">Dark</button>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="header">
+                <h1>Create Agent</h1>
+                <div class="header-actions">
+                    <button class="icon-btn">📤</button>
+                    <button class="icon-btn">📱</button>
+                    <button class="icon-btn">❌</button>
+                </div>
+            </div>
+
+            <div class="content-wrapper">
+                <!-- Form Section -->
+                <div class="form-section">
+                    <div class="section-header">
+                        <span class="section-label">AGENT CREATOR</span>
+                        <h2>Create your own AI Agent in a Few easy steps!</h2>
+                    </div>
+
+                    <!-- Progress Steps -->
+                    <div class="progress-steps">
+                        <div class="step active">
+                            <span class="step-icon">ℹ️</span>
+                            Basic Info
+                        </div>
+                        <div class="step">
+                            <span class="step-icon">👤</span>
+                            Personality
+                        </div>
+                        <div class="step">
+                            <span class="step-icon">🎨</span>
+                            Style
+                        </div>
+                    </div>
+
+                    <!-- Agent Name -->
+                    <div class="form-group">
+                        <label>Agent Name</label>
+                        <input type="text" placeholder="Enter Agent Name (Press enter to commit)" id="agentName">
+                    </div>
+
+                    <!-- AI Model Selection -->
+                    <div class="form-group">
+                        <label>Choose AI Model</label>
+                        <div class="model-options">
+                            <button class="model-btn" data-model="openai">OpenAI</button>
+                            <button class="model-btn active" data-model="anthropic">Anthropic</button>
+                            <button class="model-btn" data-model="custom">Custom</button>
+                        </div>
+                    </div>
+
+                    <!-- Universe -->
+                    <div class="form-group">
+                        <label>Universe</label>
+                        <textarea placeholder="Enter Universe (Press enter to commit)" id="universe"></textarea>
+                    </div>
+
+                    <!-- Topic Expertise -->
+                    <div class="form-group">
+                        <label>Topic Expertise</label>
+                        <textarea placeholder="Comma-separated (e.g. *AI, Robotics, Music) (Press enter to commit)" id="topicExpertise"></textarea>
+                    </div>
+
+                    <button class="save-btn">💾 Save Agent</button>
+                </div>
+
+                <!-- Image Section -->
+                <div class="image-section">
+                    <div class="image-container">
+                        <img src="https://img.freepik.com/premium-photo/anime-girl-with-blue-hair-piercings-dark-room-generative-ai_958192-23901.jpg" alt="Anime Character" id="characterImage">
+                        <button class="regenerate-btn" id="regenerateBtn">🔄 Regenerate AI</button>
+                    </div>
+                    
+                    <div class="image-description">
+                        <label>Image Generation Description</label>
+                        <textarea placeholder="Enter image generation description (Press Enter to commit)" id="imageDescription"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
