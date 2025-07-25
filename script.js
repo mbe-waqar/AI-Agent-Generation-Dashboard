@@ -292,7 +292,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initialize mobile toggle
     createMobileToggle();
     
-    // Reinitialize on window resize
+    // Reinitialize on window-resize
     window.addEventListener('resize', function() {
         // Remove existing mobile toggle
         const existingToggle = document.querySelector('.mobile-toggle');
