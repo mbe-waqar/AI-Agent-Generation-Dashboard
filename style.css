@@ -96,8 +96,6 @@ body {
     cursor: pointer;
     font-size: 14px;
     transition: all 0.2s ease;
-    display: flex;
-    align-items: center;
 }
 
 .theme-btn.active {
